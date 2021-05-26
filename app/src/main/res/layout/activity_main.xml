@@ -10,8 +10,7 @@
 
 
     <EditText
-        android:autofillHints="Введите текст"
-        android:id="@+id/etInputString"
+        android:id="@+id/et_InputString"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/input_string_to_reverse"
@@ -20,20 +19,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.357"
-        tools:ignore="TextFields" />
+        tools:ignore="Autofill,TextFields" />
 
     <TextView
-        android:id="@+id/tvResultReverse"
+        android:id="@+id/tv_ResultReverse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:text="@string/result_reverse"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etInputString" />
+        app:layout_constraintTop_toBottomOf="@+id/et_InputString" />
 
     <Button
-        android:id="@+id/btnReverseString"
+        android:id="@+id/btn_ReverseString"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/reverse_string"
@@ -41,7 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvResultReverse"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ResultReverse"
         app:layout_constraintVertical_bias="0.159" />
 
 
