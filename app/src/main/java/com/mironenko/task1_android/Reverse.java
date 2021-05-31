@@ -1,26 +1,21 @@
 package com.mironenko.task1_android;
 
 import android.os.Build;
-import android.text.Editable;
 
 import androidx.annotation.RequiresApi;
 
 public abstract class Reverse {
+
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    public static Editable reverseInput(Editable inputText) {
+    public static String reverseInput(String inputText) {
         StringBuilder resultString = new StringBuilder();
-        String inputString = inputText.toString();
-        String[] words = arrayWords(inputString);
-        for (int i = 0; i < words.length; i++) {
-            if (i != words.length - 1) {
-                resultString.append(reverse(words[i]));
-                resultString.append(" ");
-            } else {
-                resultString.append(reverse(words[i]));
-            }
+        String[] words = arrayWords(inputText);
+        for (String word : words) {
+            resultString.append(reverse(word));
+            resultString.append(" ");
         }
 
-        return inputText.replace(0, inputText.length(), resultString);
+        return resultString.toString().trim();
     }
 
     private static String[] arrayWords(String inputString) {
@@ -45,6 +40,6 @@ public abstract class Reverse {
                 r--;
             }
         }
-        return String.valueOf(str).intern();
+        return String.valueOf(str);
     }
 }
