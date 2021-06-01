@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">Task1_Android</string>
+    <string name="app_name">Reverse</string>
+    <string name="result_reverse">Result reverse…</string>
+    <string name="input_string_to_reverse">input string to reverse</string>
+    <string name="reverse_string">reverse string</string>
 </resources>
